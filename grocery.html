@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        .items li,
+        .add-items{
+            display:flex;
+            gap:1rem;
+            font-size:1.25rem;
+        }
+        .add-items{
+            margin-bottom:1rem;
+        }
+    </style>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Grocery List</h1>
+        <ol id="Items" class="items">
+            
+        </ol>
+        <h3>Add New Grocery Items</h3>
+        <div class="add-items">
+            <div>
+                <label>Item</label>
+                <input type="text" id="ItemName">
+            </div>
+            <div>
+                <label>Quantity</label>
+                <input type="number" id="ItemQuantity">
+            </div>
+        </div>
+        <button id="AddItemButton">Add Item</button>
+        <script src="grocery.js" async defer></script>
+    </body>
+</html>
